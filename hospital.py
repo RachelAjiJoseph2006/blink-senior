@@ -16,6 +16,8 @@ ESP_IP = "192.168.137.140"  # Change to your ESP32 IP
 ESP_PORT = 12345  # UDP port
 
 
+## Test to make Delna run git pull
+
 class UDPClient:
     def __init__(self, ip, port):
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
