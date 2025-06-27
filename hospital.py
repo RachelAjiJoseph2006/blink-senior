@@ -301,7 +301,7 @@ class EyeControlGUI(QMainWindow):
                 self.wake_counter = 0
                 self.awake_timer.start(10000)  # Start timer to turn off awake flag after 10 seconds
         else:
-            self.blink_counter += blink_count
+            self.blink_counter += self.blink_count
             self.blink_counter_label.setText(f"Blinks: {self.blink_counter}")
             if self.blink_counter == 1:
                 current_widget = self.options_stack.currentWidget()
